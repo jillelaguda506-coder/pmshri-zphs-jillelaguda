@@ -52,6 +52,24 @@ padding:10px;
 }
 
 h2{color:#0a5ea8;}
+  .gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
 </style>
 </head>
 
@@ -122,4 +140,5 @@ h2{color:#0a5ea8;}
 </footer>
 
 </body>
+
 </html>
